@@ -5,44 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>University Campus Map</title>
 <style>
-    /* Style the map container */
-    #map {
-        width: 100%;
-        height: 400px; /* Adjust height as needed */
-    }
+body{
+    background-color: gray;
+}
+h1{
+    text-align: center;
+}
+iframe{
+    position: absolute;
+    left: 20%;
+}
 </style>
 </head>
 <body>
 
 <h1>University Campus Map</h1>
 
-<!-- Add a div for the map -->
-<div id="map"></div>
-
-<script>
-    // Initialize the map
-    function initMap() {
-        // Set the coordinates for the center of the map (latitude and longitude)
-        var center = { lat: 31.25599197422904, lng: 75.70256321077129 };
-
-        // Create a new map object centered at the specified coordinates
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: center,
-            zoom: 16 // Adjust zoom level as needed
-        });
-
-        // Add a marker at the center of the map
-        var marker = new google.maps.Marker({
-            position: center,
-            map: map,
-            title: 'University Campus' // Tooltip text
-        });
-    }
-</script>
-
-<!-- Load the Google Maps API with the callback function -->
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-<!-- Replace YOUR_API_KEY with your actual Google Maps API key -->
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.7265650624317!2d75.70256321077129!3d31.25599197422904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1712951075277!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </body>
 </html>
